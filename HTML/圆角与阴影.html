@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圆角与阴影</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 50%;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 200px;
+            /* 给圆添加阴影 */
+            /* box-shadow: 水平阴影 垂直阴影 模糊距离 阴影尺寸 阴影颜色 内外阴影（外阴影不写）*/
+            box-shadow: 10px 10px 20px 2px #000;
+        }
+        
+        .round {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="circle">圆</div>
+    <div class="round">圆角</div>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+/* 整理 css 常用样式 */
+
+
+/*取消所有样式的padding和margin*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*取消li的左边角标*/
+
+li {
+    list-style: none;
+}
+
+
+/* font 简写 */
+
+.font {
+    /* font: font-style font-weight font-size/line-height font-family; */
+    font: italic, 700, 100px/1.5em, "黑体";
+}
+
+
+/* border 连写 */
+
+.border {
+    /* solid 实线  dashed 虚线 dotted 点线 */
+    border-bottom: 2px solid #00a4ff;
+}
+
+
+/* backgroud 简写 */
+
+.background {
+    /* 背景色 背景图片url 平铺类型 定位 */
+    background: #ccc url() no-repeat top center;
+}
+
+
+/* 内边距和外边距，两者用法一样，以内边距为例 */
+
+.paddingAndMargin {
+    /* 单独用法 */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* 复合用法 */
+    /* 1. 上下左右都设置10px */
+    padding: 10px;
+    /* 顺序为 上右下左 */
+    padding: 10px 10px 10px 10px;
+    /* 2. 上下10px 左右20px */
+    padding: 10px 20px;
+}
+
+
+/*文字居中 */
+
+.fontCenter {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+
+/* 导航栏文字长度不一致，文字居中 */
+
+.fontCenter2 {
+    /* 如果导航栏文字长度不一样，根据文字长度适应宽度 通过padding值控制居中*/
+    height: 50px;
+    padding: 0 10px;
+}
+
+
+/* 未访问的链接 */
+
+a:link {
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* 已访问过的链接 */
+
+a:visited {
+    color: orange;
+    text-decoration: none;
+}
+
+
+/* 鼠标经过链接 */
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+
+/* 选定的链接 */
+
+a:active {
+    color: green;
+    text-decoration: none;
+}
+
+
+/* 阴影 */
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border-radius: 50%;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 200px;
+    /* 给圆添加阴影 */
+    /* box-shadow: 水平阴影 垂直阴影 模糊距离 阴影尺寸 阴影颜色 内外阴影（外阴影不写）*/
+    box-shadow: 10px 10px 20px 2px #000;
+}
+
+
+/* 清除浮动 伪元素 */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    /* ie6,7 专用清除浮动样式 */
+    *zoom: 1;
+}
+
+
+/* 清除浮动 双伪元素 */
+
+.clearfix::before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    /* ie6,7 专用清除浮动样式 */
+    *zoom: 1;
+}
+
+
+/* css书写顺序 */
+
+
+/*  
+1. 布局定位属性: display/position/float/clear/visibility/overflow 
+    2. 自身属性: width/height/margin/padding/border/background
+    3. 文本属性: color/font/textdecoration/text-align/vertical-align/white-space/break-word 
+    4. 其它属性: content/sursor/border-radius/box-shadow/text-shadow/background
+*/

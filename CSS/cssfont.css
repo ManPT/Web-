@@ -1,0 +1,21 @@
+.titleFont {
+    /* 文字大小 */
+    font-size: 100px;
+    /* 字体 */
+    font-family: "黑体";
+    /* 字体粗细 700=加粗 400 = 正常*/
+    font-weight: bold;
+    /* 字体风格 */
+    font-style: italic;
+    /* 综合写法 根据顺序写*/
+    /* font: font-style font-weight font-size/line-height font-family; */
+    font: italic, 700, 100px, "黑体";
+    /* 文字对齐方式 */
+    text-align: center;
+    /* 行间距 */
+    line-height: 24px;
+    /* 首行缩进 */
+    text-indent: 2em;
+    /* 下划线  underline 显示下划线  none 取消下划线*/
+    text-decoration-line: underline;
+}

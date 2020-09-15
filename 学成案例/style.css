@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+/* 版心 */
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+
+.logo {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 100%;
+    font: normal 700 20px "黑体";
+    text-align: center;
+    line-height: 42px;
+    color: #fff;
+    background-color: blue;
+}
+
+.nav {
+    float: left;
+    margin-left: 60px;
+    height: 100%;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    padding: 0 10px;
+    margin-right: 20px;
+    height: 40px;
+    font-size: 10px;
+    line-height: 40px;
+    color: #222;
+    text-decoration-line: none;
+}
+
+.nav li a:hover {
+    border: 2px;
+    /* solid 实线  dashed 虚线 dotted 点线 */
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    margin-left: 70px;
+}
+
+.searchInput {
+    float: left;
+    padding-left: 20px;
+    width: 340px;
+    height: 38px;
+    border: 2px solid #00a4ff;
+    color: #ccc;
+    outline: none;
+}
+
+.searchButton {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-color: #00a4ff;
+    border: none;
+    outline: none;
+}
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.subNav {
+    float: left;
+    padding: 0 20px;
+    width: 150px;
+    height: 420px;
+    /* background-color: #000000; */
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.subNav li {
+    height: 45px;
+    line-height: 45px;
+}
+
+.subNav span {
+    float: right;
+    margin: auto;
+}
+
+.subNav a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.subNav a:hover {
+    color: #00a4ff;
+}
+
+.course {
+    float: right;
+    width: 228px;
+    height: 300px;
+    background-color: white;
+    margin-top: 50px;
+}
+
+.course-hd {
+    height: 48px;
+    color: white;
+    font: 700 20px/48px "黑体";
+    background-color: #9dceea;
+    text-align: center;
+}
+
+.course-bd {
+    padding: 0 15px;
+}
+
+.course-bd li {
+    padding-top: 10px;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.course-bd li h5 {
+    font-size: 14px;
+    color: #000;
+    font-weight: 700;
+}
+
+.course-bd li h6 {
+    font-size: 12px;
+    color: #ccc;
+    font-weight: 400;
+    padding-top: 2px;
+}
+
+.course-bt {
+    display: block;
+    margin-top: 10px;
+    height: 38px;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 38px;
+    text-decoration-line: none;
+}
+
+.course-bt:hover {
+    background-color: #00a4ff;
+    color: white;
+}
+
+.goods {
+    height: 60px;
+    background-color: white;
+    box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, .2);
+    text-align: center;
+    line-height: 60px;
+    margin-top: 10px;
+}
+
+.goods h3 {
+    float: left;
+    margin: 0 30px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods-item {
+    float: left;
+    color: #ccc;
+}
+
+.goods-item a {
+    font-size: 16px;
+    color: #050505;
+    padding: 0 20px;
+}
+
+.mod {
+    float: right;
+    font-size: 14px;
+    color: #00a4ff;
+    margin-right: 30px;
+}
+
+.box {
+    margin-top: 15px;
+}
+
+.box-hd {
+    height: 60px;
+    line-height: 60px;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    text-decoration-line: none;
+}
+
+.box-bd {
+    width: 1215px;
+}
+
+.box-bd li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, .2);
+}
+
+
+/* 清除浮动 伪元素 */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    /* ie6,7 专用清除浮动样式 */
+    *zoom: 1;
+}
+
+.foot {
+    margin-top: 30px;
+    padding-top: 20px;
+    height: 395px;
+    background-color: #fff;
+}
+
+.foot .copyright {
+    float: left;
+}
+
+.foot .copyright p {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
+.foot .copyright Button {
+    padding: 5px 15px;
+    margin-top: 10px;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+    background-color: transparent;
+}
+
+.links {
+    float: right;
+}
+
+.links dl {
+    float: left;
+    padding-left: 100px;
+}
+
+.links dt {
+    font-size: 16px;
+    color: #333;
+    padding-bottom: 20px;
+}
+
+.links dd {
+    font-size: 12px;
+    color: #333;
+    padding-bottom: 5px;
+}
